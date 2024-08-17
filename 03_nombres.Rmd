@@ -1,0 +1,47 @@
+---
+title: "Ejercicios"
+author: "nombre"
+date: "2024-08-01"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(dplyr)
+library(ggplot2)
+```
+
+
+```{r carga-datos}
+nombres <- datos::nombres
+```
+
+1. Calculá cuantos bebés de cada sexo fueron llamados "Mary" o "Kerry". 
+
+```{r}
+
+```
+
+
+2. Calculá la cantidad de bebés de cada sexo llamado "Mary" para cada año y hacé un gráfico donde el eje x sea el año, el eje y la cantidad de nacidos y haya una linea de color distinto para cada sexo.
+
+
+```{r}
+
+```
+
+3. Repetí el gráfico anterior para el nombre "Kerry".
+
+```{r}
+
+```
+
+
+4. ¿Cuál fue la proporción máxima para cada sexo en cada año? Hacé un gráfico mostrando la evolución de eta variable. (podés calcular el máximo con `max(prop)`)
+
+```{r}
+
+```
+
+

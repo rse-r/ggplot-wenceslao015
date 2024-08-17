@@ -1,0 +1,89 @@
+---
+title: "Gráficos con ggplot2"
+author: "<tu nombre>"
+date: "2024-07-11"
+output: html_document
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+
+# En este bloque cargá los paquetes que vas a necesitar
+
+```
+
+# Preparación
+
+Esta vez vamos a trabajar con los datos `millas` del paquete datos. 
+Familiarizate con los datos igual que hiciste en el ejercicio anterior. 
+
+```{r}
+millas <- datos::millas
+```
+
+
+En los ejercicios siguientes, vas a hacer varios gráficos. 
+Además de escribir el código para generar el gráfico, escribí como mínimo una oración describiendo qué es lo que ves. 
+¿Qué relación hay entre las variables? 
+¿Qué hipótesis te surgen? 
+
+# Ejercicios
+
+1. Hacé un gráfico de puntos de "autopista" versus "cilindros".
+¿Qué conclusión sacás?
+
+```{r}
+ggplot(millas, aes(____, ____)) +
+  geom_____()
+```
+
+
+2. Hacé un gráfico similar pero de "autopista" versus "ciudad". 
+
+
+```{r}
+
+```
+
+
+3. ¿Qué pasa cuando haces un gráfico de  de "clase" versus "traccion"? ¿Por qué no es útil este gráfico?
+
+```{r}
+
+```
+
+
+4. En otro bloque, rehacé el gráfico de "autopista" versus "ciudad" pero ahora asigná la variable "tracción" al color de los puntos. 
+
+```{r}
+
+```
+
+
+5. En otro bloque, rehacé el gráfico de "autopista" versus "ciudad" pero ahora asigná la variable "tracción" al color de los puntos. 
+
+```{r}
+
+```
+
+
+5. ¿Qué ocurre si se asigna o mapea una estética a algo diferente del nombre de una variable, como `aes(color = cilindrada < 3)`?
+
+```{r}
+
+```
+
+
+
+6. ¿Notás algún problema con los gráfico anterior? Pensá en qué valores toman los datos de `ciudad` y `autopista`, ¿es posible que no haya ningún auto que haga 20.3 millas por galón en autopista? ¿Qué problemas puede traer eso? Por ejemplo, mirando el gráfico, ¿cuántos autos existe que hagan 20 millas en autopista y 15 en ciudad? 
+
+
+7. En el gráfico anterior, reemplazá `geom_point()` por `geom_jitter()`. ¿Qué es lo que sucede? (Podés fijate en la ayuda de `geom_jitter()` si no entendés qué es lo que hace.) 
+¿Qué ventajas y desventajas tiene este geom?
+
+```{r}
+
+```
+
